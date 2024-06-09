@@ -1,0 +1,436 @@
+body
+{
+    background-color: #FFF3B7;
+}
+
+/*********** DESIGNS FOR THE WHOLE WEBSITE ***********/
+/** FONT DEPLOYMENT **/
+h1
+{
+    font-family: Roboto Slab;
+    color: #FEB341;
+}
+
+h2
+{
+    font-family: Roboto Mono;
+}
+
+h3,h4,h5,h6,p
+{
+    font-family: Roboto Flex;
+}
+
+/** CODE TO CENTER **/
+.about, .taglines, .about_grid .right, .about_grid .left .content,
+.container_landingpage, .container_rates .content, .content_sendletter,
+.tab-pane .content, .artworks_nav,
+.card-title, .container_container_icon, .container_icon,
+.taglines .icon_circle,footer .container_copyright,
+.container_getyours,
+h1, h3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** BUTTONS STYLE **/
+.tnc button, .faqs button 
+{
+    background-color: #683A2C;
+    border-color: transparent;
+    margin: 5px;
+}
+
+.tnc button:hover, .faqs button:hover
+{
+    background-color: #FEB341;
+    border-color: transparent;
+    color: #683A2C;
+} 
+
+#avail_btn, #availcommish_btn
+{
+    width: 250px;
+    background-color: #A62746 ;
+    border-color: transparent;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#avail_btn:hover, #availcommish_btn:hover
+{
+    background-color: #FEB341;
+    color: #683A2C;
+}
+
+#availcommish_btn
+{
+    position: absolute;
+    z-index: 1;
+    margin-bottom: -350px;
+}
+
+/** ICONS STYLE **/
+.about .icon 
+{
+    color: #683A2C;
+    font-size: 20px;
+}
+
+.about .icon:hover
+{
+    color: #FEB341;
+}
+
+/** CODE TO CENTER TEXT ALIGNMENT **/
+.container_arts p, .container_rates h6, .card-title, 
+.card-text, .rate_price
+{
+    text-align: center;
+}
+
+
+/*********** DESIGNS FOR PARTS OF THE WEBSITE ***********/
+/** NAV BAR **/
+.nav_bar
+{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand img
+{
+    width: 150px;
+}
+
+/** LANDING PAGE **/
+.container_landingpage
+{
+    position: relative;
+}
+
+#landingpage_bg
+{
+    width: 100%;
+}
+
+.taglines .icon_circle
+{
+    width: 150px;
+    height: 150px;
+    background-color: #683A2C;
+    border-radius: 50%;
+    color:#fff;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 25px;
+    position: relative;
+    margin-top: -100px;
+}
+
+/** CONTAINER **/
+.container
+{
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: -10px;
+    border-top: 25px solid #683A2C; 
+}
+
+.about_grid
+{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 25px; 
+}
+
+.about_grid .right
+{
+    text-align: center;
+    flex-direction: column;
+    border-left: 2px solid #683A2C;
+    padding: 15px;
+}
+
+.about_grid .right .content_footer
+{
+    color: #fff;
+    background-color: #683A2C;
+    padding: 5px;
+}
+
+.about img
+{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+/** FEATURES **/
+.features
+{
+    margin-bottom: 50px;
+}
+
+/** ARTWORKS **/
+.tab-pane img
+{
+    height: 250px;
+}
+
+/** RATES **/
+.inline 
+{
+    display: inline;
+}
+
+.container_card 
+{
+    display: flex;
+}
+
+.card
+{
+    margin: 20px;
+    width: 280px;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.card-body
+{
+    background-color: #FFF5E1;
+}
+
+.container_container_icon
+{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.container_icon
+{
+    background-color: #A64629;
+    border-radius: 50%;
+    padding: 25px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.card-title
+{
+    background-color: #683A2C;
+    width: 100%;
+    height: 150px; 
+    color: #fff;
+}
+
+.container_getyours
+{
+    flex-direction: column;
+}
+
+/** FOOTER **/
+footer 
+{
+    background-color: #683A2C;
+    height: fit-content;
+    display: flex;
+    /**position: relative;**/
+    width: 100%;
+    /**margin-top: 100px;**/
+    margin-bottom: 0;
+}
+
+footer img 
+{
+    height: 160px;
+    /**margin-left: 100px;**/
+}
+
+footer .navpane 
+{
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    height: 100%;
+    margin-top: 40px;
+}
+
+footer .navpane a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .navpane a:hover
+{
+    color: #FEB341;
+    text-decoration: underline;
+}
+
+footer .copyright 
+{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_copyright 
+{
+    /**position: absolute;**/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .getintouch 
+{
+    background-color: #FEB341;
+    padding: 5px;
+    /**position: absolute;**/
+    /**right: 100px;**/
+    width: max-content;
+}
+
+footer .getintouch .content
+{
+    display: flex;
+}
+
+footer .getintouch .icon 
+{
+    color: #A62746;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/** RESPONSIVENESS **/
+@media screen and (min-width: 601px) and (max-width: 900px)
+{
+    #availcommish_btn
+    {
+        height: 50px;
+        width: auto;
+        margin-bottom: -150px;
+        padding: 10px;
+    }
+
+    .taglines .icon_circle
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about_grid 
+    {
+      grid-template-columns: 1fr; 
+    }
+
+    .about_grid .right
+    {
+        border-left: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    .about_grid .left .content
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+    /** ARTWORKS **/
+    .content 
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tab-pane img
+    {
+        width: calc(50% - 10px); 
+        max-width: 100%; 
+        height: auto;
+        margin: 5px; 
+    }
+
+    /** RATES **/
+    .container_card 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /** FOOTER **/
+    footer 
+    {
+        height: fit-content;
+    }
+
+    .container_copyright 
+    {
+        width: 50%;
+    }
+
+    footer .getintouch 
+    {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .nav_bar
+    {
+        width: 100%;
+    }
+    .taglines .icon_circle
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about_grid 
+    {
+      grid-template-columns: 1fr; 
+    }
+
+    .about img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container_copyright 
+    {
+        width: 20%;
+    }
+
+    footer .getintouch 
+    {
+        width: 100px;
+    }
+
+    footer img 
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
